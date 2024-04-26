@@ -2,7 +2,7 @@ package payment;
 
 import java.util.Scanner;
 
-public class CardPaymentReceiver extends PaymentReceiver {
+public class CardPaymentReceiver extends PaymentReceiver{
     private String cardNumber;
     private String oneTimePassword;
     @Override
