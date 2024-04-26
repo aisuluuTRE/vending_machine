@@ -1,19 +1,21 @@
 import enums.ActionLetter;
 import model.*;
+import payment.PaymentReceiver;
 import util.UniversalArray;
 import util.UniversalArrayImpl;
 
 import java.util.Scanner;
 
 public class AppRunner {
-
     private final UniversalArray<Product> products = new UniversalArrayImpl<>();
-
-    private final CoinAcceptor coinAcceptor;
+    private PaymentReceiver paymentReceiver;
 
     private static boolean isExit = false;
 
+    private final CoinAcceptor coinAcceptor;
+
     private AppRunner() {
+        this.paymentReceiver = paymentReceiver;
         products.addAll(new Product[]{
                 new Water(ActionLetter.B, 20),
                 new CocaCola(ActionLetter.C, 50),
@@ -23,6 +25,10 @@ public class AppRunner {
                 new Pistachios(ActionLetter.G, 130)
         });
         coinAcceptor = new CoinAcceptor(100);
+    }
+
+    public void requestPayment(int amount) {
+        paymentReceiver.acceptPayment(amount);
     }
 
     public static void run() {
@@ -76,7 +82,7 @@ public class AppRunner {
             if ("h".equalsIgnoreCase(action)) {
                 isExit = true;
             } else {
-                print("Недопустимая буква. Попрбуйте еще раз.");
+                print("Недопустимая буква. Попробуйте еще раз.");
                 chooseAction(products);
             }
         }
