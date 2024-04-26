@@ -1,0 +1,5 @@
+1) Create an abstract payment.PaymentReceiver class
+2) create a payment.PaymentInteraction interface to work with a cash acceptor
+3)создаем основную логику для принятия платежа через банковскую карту.
+4) Модифицируем класс AppRunner, чтобы он использовал интерфейс PaymentInteraction для взаимодействия с деньгоприемником
+5) Обновляем метод main, чтобы он создавал экземпляр AppRunner с конкретным деньгоприемником (например, CoinPaymentReceiver)
