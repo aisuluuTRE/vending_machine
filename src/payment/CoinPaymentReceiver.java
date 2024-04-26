@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class CoinPaymentReceiver extends PaymentReceiver {
     private int amount;
-
     @Override
     public void acceptPayment(int amount) {
         System.out.println("Бросьте монеты в монетоприемник.");

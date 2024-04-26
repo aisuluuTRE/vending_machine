@@ -1,4 +1,5 @@
 import payment.CoinPaymentReceiver;
+import payment.PaymentReceiver;
 
 
 public class Main {
