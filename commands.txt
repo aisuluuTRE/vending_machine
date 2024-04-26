@@ -1,12 +1,22 @@
 git init
 git branch home_work_25
 git checkout home_work_25
-
-
-
-
- Create an abstract payment.PaymentReceiver class
- create a payment.PaymentInteraction interface to work with a cash acceptor
-создаем основную логику для принятия платежа через банковскую карту.
- Модифицируем класс AppRunner, чтобы он использовал интерфейс PaymentInteraction для взаимодействия с деньгоприемником
- Обновляем метод main, чтобы он создавал экземпляр AppRunner с конкретным деньгоприемником (например, CoinPaymentReceiver)
+add to github
+git commit -m " create the basic logic for accepting payment via a bank card."
+add to github
+git commit -m "create the basic logic for accepting payment through coins."
+add to github
+git commit -m " modify the AppRunner class so that it uses the PaymentInteraction interface to interact with the cash acceptor"
+add to github
+git commit -m " update the main method so that it creates an AppRunner instance with a specific money receiver (for example, CoinPaymentReceiver)"
+add to git hub
+git commit -m "update commits"
+add to github
+git commit -m "text"
+add to github
+git commit -m "new text"
+add to github
+git commit -m "modifying"
+git checkout master
+git merge home_work_25
+git push
