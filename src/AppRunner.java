@@ -1,6 +1,5 @@
 import enums.ActionLetter;
 import model.*;
-import payment.PaymentReceiver;
 import util.UniversalArray;
 import util.UniversalArrayImpl;
 
@@ -31,7 +30,7 @@ public class AppRunner {
         paymentReceiver.acceptPayment(amount);
     }
 
-    public static void run() {
+    public static void run(PaymentReceiver paymentReceiver) {
         AppRunner app = new AppRunner();
         while (!isExit) {
             app.startSimulation();
