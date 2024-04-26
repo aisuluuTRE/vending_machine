@@ -1,3 +1,0 @@
-1) Create an abstract PaymentReceiver class
-2) create a PaymentInteraction interface to work with a cash acceptor
-3)
